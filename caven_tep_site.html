@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caven Tep Emagrecimento</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #e6f7f9;
+      color: #003b46;
+    }
+
+    header {
+      background-color: #007ea7;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .menu {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 0;
+      margin-top: 1rem;
+    }
+
+    .menu li {
+      margin: 0 15px;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .menu a:hover {
+      color: #ffd700;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: linear-gradient(to bottom, #b2ebf2, #e0f7fa);
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    .whatsapp-btn {
+      display: inline-block;
+      background-color: #25D366;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .whatsapp-btn:hover {
+      background-color: #1ebf53;
+      transform: scale(1.05);
+    }
+
+    .produtos {
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .produto {
+      background-color: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .produto:hover {
+      transform: translateY(-5px);
+    }
+
+    .produto img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      background-color: #007ea7;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 1.5rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+      .menu {
+        flex-direction: column;
+      }
+      .menu li {
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Caven Tep Emagrecimento</h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="#">Início</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Transforme seu corpo com nossos eBooks exclusivos!</h2>
+    <p>Receitas, planos e dicas práticas para emagrecer de forma natural e saudável.</p>
+    <a href="https://wa.me/244926625330" class="whatsapp-btn">Fale no WhatsApp</a>
+  </section>
+
+  <section id="produtos" class="produtos">
+    <div class="produto">
+      <img src="https://via.placeholder.com/200x280?text=Emagre%C3%A7a+5kg+em+30+Dias" alt="Emagreça 5kg em 30 Dias">
+      <h3>Emagreça 5kg em 30 Dias</h3>
+      <p>Perfeito para quem quer emagrecer rápido e com saúde.</p>
+      <strong>Preço: 5.000 Kz</strong><br>
+      <a href="https://wa.me/244926625330" class="whatsapp-btn">Comprar</a>
+    </div>
+    <div class="produto">
+      <img src="https://via.placeholder.com/200x280?text=Receitas+Detox" alt="Receitas Detox para Secar a Barriga">
+      <h3>Receitas Detox para Secar a Barriga</h3>
+      <p>Sumos e receitas poderosas para eliminar toxinas e reduzir medidas.</p>
+      <strong>Preço: 9.550 Kz</strong><br>
+      <a href="https://wa.me/244926625330" class="whatsapp-btn">Comprar</a>
+    </div>
+    <div class="produto">
+      <img src="https://via.placeholder.com/200x280?text=Plano+de+21+Dias" alt="Plano de 21 Dias para Definir o Corpo">
+      <h3>Plano de 21 Dias para Definir o Corpo</h3>
+      <p>Exercícios e alimentação para transformar o corpo em 3 semanas.</p>
+      <strong>Preço: 8.000 Kz</strong><br>
+      <a href="https://wa.me/244926625330" class="whatsapp-btn">Comprar</a>
+    </div>
+  </section>
+
+  <section id="sobre" class="hero">
+    <h2>Sobre a Caven Tep</h2>
+    <p>Somos uma equipe dedicada a ajudar você a alcançar o corpo dos seus sonhos com planos simples, naturais e acessíveis.</p>
+  </section>
+
+  <section id="contato" class="hero">
+    <h2>Fale Conosco</h2>
+    <p>Tem dúvidas? Precisa de ajuda? Clique abaixo e fale diretamente conosco pelo WhatsApp.</p>
+    <a href="https://wa.me/244926625330" class="whatsapp-btn">Atendimento Rápido</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Caven Tep Emagrecimento - Angola</p>
+  </footer>
+</body>
+</html>
